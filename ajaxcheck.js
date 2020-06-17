@@ -17,7 +17,7 @@
     ], [
         './mockdata.js',
         './util.json.js',
-        'js/widgets/fileinput/fileinput.js'
+        './js/widgets/fileinput/fileinput.js'
     ], initPage);
     
     

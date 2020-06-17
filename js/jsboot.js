@@ -11,56 +11,56 @@
     var paths = {
         // base层会最先加载，作为框架的基石，base层之后是ejs层再然后才是core层
         base: [
-            'js/libs/promise.js', 
-            'js/mui/mui.js',
-            'js/libs/zepto.min.js',                
-            'js/libs/mustache.min.js'
+            './js/libs/promise.js', 
+            './js/mui/mui.js',
+            './js/libs/zepto.min.js',                
+            './js/libs/mustache.min.js'
         ],
         // core层会在base层和ejs层加载完毕后再加载
         core: [
-            'js/common/common.js',
-            'js/common/common.ajax.js',
-            'js/common/common.ajax.upload.js',
+            './js/common/common.js',
+            './js/common/common.ajax.js',
+            './js/common/common.ajax.upload.js',
             // 这个会对 ajax 和 upload都进行一次数据请求的代理
-            'js/common/common.ajax.dataprocess.js',
-            'js/common/common.clazz.js',
-            'js/common/common.dataprocess.js',
-            'js/common/common.dataprocess.v6path.js',
-            'js/common/common.dataprocess.v7path.js',
-            'js/common/common.loadjs.js',
-            'js/common/common.os.js',
-            'js/common/common.path.js',
-            'js/common/common.input.js',
-            'js/common/common.ejs.webenv.js',
+            './js/common/common.ajax.dataprocess.js',
+            './js/common/common.clazz.js',
+            './js/common/common.dataprocess.js',
+            './js/common/common.dataprocess.v6path.js',
+            './js/common/common.dataprocess.v7path.js',
+            './js/common/common.loadjs.js',
+            './js/common/common.os.js',
+            './js/common/common.path.js',
+            './js/common/common.input.js',
+            './js/common/common.ejs.webenv.js',
             // 依赖了下面的 ejs 类库，以3.x的用法 来兼容部分2.x的 api
-            'js/common/common.ejs.compatible.js',
-            'js/common/common.ejs.extend.js'
+            './js/common/common.ejs.compatible.js',
+            './js/common/common.ejs.extend.js'
         ],
         ejsv2: {
             base: [
-                'js/ejs/v2/epoint.moapi.v2.js'
+                './js/ejs/v2/epoint.moapi.v2.js'
             ],
             h5: [
-                'js/ejs/v2/epoint.moapi.v2.h5mui.js'
+                './js/ejs/v2/epoint.moapi.v2.h5mui.js'
             ],
             dd: [
-                'js/ejs/dingtalk.js',
-                'js/ejs/v2/epoint.moapi.v2.dd.js'
+                './js/ejs/dingtalk.js',
+                './js/ejs/v2/epoint.moapi.v2.dd.js'
             ]
         },
         ejsv3: {
             base: [
-                'js/ejs/v3/ejs.core.js'
+                './js/ejs/v3/ejs.core.js'
             ],
             h5: [
-                'js/ejs/v3/ejs.api.v3.h5mui.js'
+                './js/ejs/v3/ejs.api.v3.h5mui.js'
             ],
             dd: [
-                'js/ejs/dingtalk.js',
-                'js/ejs/v3/ejs.api.v3.dd.js'
+                './js/ejs/dingtalk.js',
+                './js/ejs/v3/ejs.api.v3.dd.js'
             ],
             ejs: [
-                'js/ejs/v3/ejs.api.v3.native.js'
+                './js/ejs/v3/ejs.api.v3.native.js'
             ]
         }
     };

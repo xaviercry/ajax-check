@@ -301,8 +301,8 @@
 
 var paths = [
     // 写入每个页面必备的css文件
-    'js/mui/mui.css',
-    'js/mui/mui.extend.css',
+    './js/mui/mui.css',
+    './js/mui/mui.extend.css',
 ];
 
 if (typeof Config != 'undefined') {
